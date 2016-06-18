@@ -2109,204 +2109,225 @@ background-image:none;
 }
 
 .sm-title {
-    font-size: 16px;
-    padding: 0px 25px 0px 0px;
+  color: #000;
+  font-size: 16px;
+  padding: 0px 25px 0px 0px;
 }
 
 .sm-label {
-    color: #000;
-    font-size: 12px;
+  color: #000;
+  font-size: 12px;
 }
 
 .sm-value {
-    text-align: right;
-    min-width: 40px;
+  color: #000;
+  text-align: right;
+  min-width: 40px;
 }
 
 .sm-status-label {
-    color: #000;
-    font-size: 10px;
-    padding: 0 2px 0 5px;
+  color: #000;
+  font-size: 10px;
+  padding: 0 2px 0 5px;
 }
 
 .sm-unit-label,
 .sm-net-unit-label {
-    color: #000;
-    font-size: 8px;
-    padding: 6px 5px 0 2px;
+  color: #000;
+  font-size: 8px;
+  padding: 6px 5px 0 2px;
 }
 
 .sm-disk-unit-label {
-    color: #000;
-    font-size: 10px;
-    padding: 0 5px 0 2px;
+  color: #000;
+  font-size: 10px;
+  padding: 0 5px 0 2px;
 }
 
 .sm-net-unit-label {
-    min-width: 25px;
+  min-width: 25px;
+  color: #000;
 }
 
 .sm-perc-label {
-    color: #000;
-    font-size: 10px;
-    padding: 0 5px 0 2px;
+  color: #000;
+  font-size: 10px;
+  padding: 0 5px 0 2px;
 }
 
 .sm-temp-label {
-    color: #000;
-    font-size: 11px;
-    padding: 0 5px 0 2px;
+  color: #000;
+  font-size: 11px;
+  padding: 0 5px 0 2px;
 }
 
 .sm-status-value {
-    min-width: 25px;
-    text-align: right;
+  color: #000;
+  min-width: 25px;
+  text-align: right;
 }
 
 .sm-net-value {
-    min-width: 40px;
-    text-align: center;
+  color: #000;
+  min-width: 40px;
+  text-align: center;
 }
 
 .sm-disk-value {
-    min-width: 25px;
-    text-align: right;
+  color: #000;
+  min-width: 25px;
+  text-align: right;
 }
 
 .sm-big-status-value {
-    min-width: 42px;
-    text-align: right;
+  color: #000;
+  min-width: 42px;
+  text-align: right;
 }
 
 .sm-chart {
-    padding: 0 2px;
+  color: #000;
+  padding: 0 2px;
 }
 
 .sm-tooltip-box {
-    font-size: 0.85em;
-    font-weight: bold;
-    color: #000;
-    background-color: rgba(255, 255, 255, 1.0);
-    border-radius: 5px;
-    padding: 3px;
-    border: 1px solid #a5a5a5;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 1.0);
+  border-radius: 5px;
+  padding: 3px;
+  border: 1px solid #a5a5a5;
 }
 
 .sm-tooltip-item {
-    padding: 0px;
-    spacing: 10px;
+  color: #fff;
+  padding: 0px;
+  spacing: 10px;
 }
 .sm-status-icon {
-    padding: 0px 2px;
-    icon-size: 1.14em;
+  color: #000;
+  padding: 0px 2px;
+  icon-size: 1.14em;
 }
 
 .sm-popup-menu-item-compact {
+  color: #000;
 }
 
 /* style definition when 'compact-display' option is activated */
 
 .sm-title-compact {
-    font-size: 12px;
+  color: #000;
+  font-size: 12px;
 }
 
 .sm-label-compact {
-    color: #000;
-    font-size: 11px;
+  color: #000;
+  font-size: 11px;
 } /* Bat, Net... units in menu items */
 
 .sm-value-compact {
-    font-size: 11px;
-    text-align: right;
+  font-size: 11px;
+  text-align: right;
+  color: #000;
 } /* Values in menu items */
 
 .sm-status-label-compact {
-    color: #000;
-    font-size: 8px;
-    padding: 2px 0px 0 0px;
+  color: #000;
+  font-size: 8px;
+  padding: 2px 0px 0 0px;
 } /* names and Disk R and W signs in text items */
 
 .sm-unit-label-compact,
 .sm-net-unit-label-compact {
-    color: #000;
-    padding: 9px 3px 0px 1px;
-    text-align: right;
-    font-size: 7px;
+  color: #000;
+  padding: 9px 3px 0px 1px;
+  text-align: right;
+  font-size: 7px;
 } /* Bat, Net... units in text items */
 
 .sm-disk-unit-label-compact {
-    color: #000;
-    padding: 9px 3px 0px 0px;
-    text-align: right;
-    font-size: 7px;
+  color: #000;
+  padding: 9px 3px 0px 0px;
+  text-align: right;
+  font-size: 7px;
 } /* Disk units in text items */
 
 .sm-perc-label-compact {
-    padding: 9px 3px 0 0px;
-    color: #000;
-    font-size: 8px;
+  padding: 9px 3px 0 0px;
+  color: #000;
+  font-size: 8px;
 } /* Cpu, Mem ... % sign in text items */
 
 .sm-temp-label-compact {
-    font-size: 10px;
-    color: #000;
-    padding: 3px 1px 0 1px;
+  font-size: 10px;
+  color: #000;
+  padding: 3px 1px 0 1px;
 } /* Thermal °C sign in text items */
 
 .sm-status-value-compact {
-    padding:6px 0px 0 1px;
-    font-size:11px;
-    text-align: right;
-    min-width:16px;
+  padding:6px 0px 0 1px;
+  font-size:11px;
+  text-align: right;
+  min-width:16px;
+  color: #000;
 } /* Cpu, Mem... value in text items */
 
 .sm-net-value-compact {
-    padding:6px 0px 0 1px;
-    font-size:11px;
-    text-align: right;
-    min-width:24px;
+  padding:6px 0px 0 1px;
+  font-size:11px;
+  text-align: right;
+  min-width:24px;
+  color: #000;
 } /* Net value in text items */
 
 .sm-disk-value-compact {
-    padding: 6px 1px 0 1px;
-    font-size: 11px;
-    text-align: right;
-    min-width: 20px;
+  padding: 6px 1px 0 1px;
+  font-size: 11px;
+  text-align: right;
+  min-width: 20px;
+  color: #000;
 } /* Disk value in text items */
 
 .sm-big-status-value-compact {
-    padding: 6px 0px 0px 1px;
-    font-size: 11px;
-    min-width: 38px;
-    text-align: right;
+  padding: 6px 0px 0px 1px;
+  font-size: 11px;
+  min-width: 38px;
+  text-align: right;
+  color: #000;
 } /* freq in text_items */
 
 .sm-chart-compact {
-    padding: 0 2px;
+  padding: 0 2px;
+  color: #000;
 }
 
 .sm-tooltip-box {
-    font-size: 0.85em;
-    font-weight: bold;
-    color: rgba(0,0,0,1.0);
-    background-color: rgba(255,255,255,0.8);
-    border-radius: 5px;
-    padding: 3px;
-    border: 1px solid #a5a5a5;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: rgba(0,0,0,1.0);
+  background-color: rgba(255,255,255,0.8);
+  border-radius: 5px;
+  padding: 3px;
+  border: 1px solid #a5a5a5;
 }
 
 .sm-tooltip-item-compact {
-    padding: 0px;
-    spacing: 10px;
+  padding: 0px;
+  spacing: 10px;
+  color: #000;
 }
 
 .sm-status-icon-compact {
-    padding: 1px 0 0 2px;
-    icon-size: 1.00em;
+  padding: 1px 0 0 2px;
+  icon-size: 1.00em;
+  color: #000;
 } /* BAT icon in text_items */
 
 .sm-popup-menu-item-compact {
-    font-size: 11px;
-    width: 20px;
-    padding: 1px 2px 1px 7px;
+  font-size: 11px;
+  width: 20px;
+  color: #000;
+  padding: 1px 2px 1px 7px;
 }
