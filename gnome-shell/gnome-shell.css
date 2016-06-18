@@ -17,9 +17,9 @@
  * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
  */
 stage {
-    font-family: sfns display, product sans, helvetica, open sans, source sans pro, segoe ui, ubuntu, nokia pure text, lucida grande, cantarell, sans-serif;
+    font-family: noto sans, helvetica, open sans, source sans pro, segoe ui, ubuntu, nokia pure text, lucida grande, cantarell, sans-serif;
     font-size: 10pt;
-    color: #333;}
+    color: #000;}
 
 /* links */
 .shell-link {
@@ -63,10 +63,10 @@ font-size: 120%;}
 .prompt-dialog-null-label {
     font-size: 90%;}
 
-/* small bold*/ 
+/* small bold*/
 .dash-label,
 .window-caption,
-.switcher-list, 
+.switcher-list,
 .app-well-app .overview-icon,
 .show-apps .overview-icon,
 .grid-search-result .overview-icon,
@@ -543,7 +543,6 @@ StScrollBar {
 .switcher-list {
   background: none;
   border: none;
-  border-image: url("common-assets/misc/bg.svg") 9 9 9 9;
   border-radius: 3px;
   padding: 20px; }
   .switcher-list-item-container {
@@ -587,7 +586,6 @@ StScrollBar {
   .workspace-switcher-group {
     padding: 12px; }
   .workspace-switcher-container {
-    border-image: url("common-assets/misc/bg.svg") 9 9 9 9;
     border-radius: 3px;
     padding: 20px;
     padding-bottom: 24px; }
@@ -623,12 +621,9 @@ StScrollBar {
 
 #panel {
     background-gradient-direction:none;
-    background-color: rgba(255,255,255,0.75);
-/*    background-color: rgba(46,51,56,0.9);
-    border:1px solid rgba(200,200,200,.5);*/
+    background-color: rgba(255,255,255,1.0);
     box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.5);
     border: 0px solid rgba(90,105,111,0.5);
- /*	   box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.15);*/
     border-top:0px;border-right:0px;border-left:0px;
     font-weight: bold;
     height: 26px;}
@@ -637,11 +632,11 @@ StScrollBar {
     border-color: transparent;
     box-shadow: inset 0px rgba(0,0,0,0)}
 #panel:overview .panel-button {
-      color: rgba(255,255,255,.5);
+      color: rgba(255,255,255,1.0);
       border-radius: 0px 0px 4px 4px}
 #panel:overview .panel-button:hover,
 #panel:overview .panel-button:active {color:white}
-#panel:overview #panelActivities:active,
+#panel:overview #panel.:active,
 #panel:overview #panelActivities:overview {
 	color:transparent
 }
@@ -708,7 +703,7 @@ StScrollBar {
     -natural-hpadding: 6px;/*jarak item2 panel def 12px*/
     -minimum-hpadding: 4px;
     font-weight: normal;
-    color: #333;/*tulisan toolbar scr umum*/
+    color: #000;/*tulisan toolbar scr umum*/
     transition-duration: 200ms;/*nonstatus*/}
 .panel-button:hover {
     background-color: #4a90d9;
@@ -762,26 +757,23 @@ StScrollBar {
 /* Replaces the activities text with a custom image. Height and width should use the same size as the image file. */
 #panelActivities {
 	border: none;
-	background-image: url("./assets/distributor.svg");
+	background-image: url("./common-assets/panel/archlinux.svg");
 	background-position: center 20 20;
 	width: 48px;
 	height: 28px;
-	color: rgba(0,0,0,0);
-font-weight:bold;
-transition-duration:300ms;
+	color: rgba(0,0,0,1.0);
+  font-weight:bold;
+  transition-duration:300ms;
 }
 
 #panelActivities:hover {
-	/*background-image:  url("./assets/distributor-logo.svg");
-        background-gradient-direction:none;
-        background-color:transparent;*/
-transition-duration:300ms;
-	background-image: url("./assets/distributor-over.svg");
+  transition-duration:300ms;
+	background-image: url("./common-assets/panel/archlinux.svg");
         background-gradient-direction:none;
 }
 #panelActivities:active,
 #panelActivities:overview {
-	background-image:  url("./assets/distributor-active.svg");
+	      background-image:  url("./common-assets/panel/archlinux.svg");
         background-color:transparent;
         background-gradient-direction:none;
         border-image:none;
@@ -828,8 +820,8 @@ transition-duration:300ms;
 
 #appMenu {
   spinner-image: url("common-assets/misc/process-working.svg");
-  spacing: 4px;
-  padding: 0 8px; }
+  spacing: 0px;
+  padding: 0 4px; }
   #appMenu .label-shadow {
     color: transparent; }
 
@@ -840,14 +832,14 @@ transition-duration:300ms;
 
 .system-menu-action {
   padding: 13px;
-  color: #5c616c;
+  color: #000000;
   border-radius: 32px;
   /* wish we could do 50% */
   border: 1px solid transparent; }
   .system-menu-action:hover, .system-menu-action:focus {
     transition-duration: 100ms;
     padding: 13px;
-    color: #5c616c;
+    color: #000000;
     background-color: transparent;
     border: 1px solid #5294E2; }
   .system-menu-action:active {
@@ -898,7 +890,7 @@ transition-duration:300ms;
   .message-list-section-title:hover,
   .message-list-section-title:focus {
     text-shadow: 0 1px rgba(255, 255, 255, 0);
-    color: #5c616c;
+    color: #000000;
     background-color: white;
     border: 1px solid #cfd6e6;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0.05); }
@@ -1452,11 +1444,11 @@ transition-duration:300ms;
   text-align: center; }
 
 .app-well-app.app-folder > .overview-icon {
-  background-color: rgba(35, 38, 46, 0.95);
+  background-color: rgba(0,0,0,1.0);
   border: 1px solid rgba(0, 0, 0, 0.45); }
 
 .app-well-app.app-folder:hover > .overview-icon {
-  background-color: rgba(60, 64, 78, 0.95); }
+  background-color: rgba(0,0,0,1.0); }
 
 .app-well-app.app-folder:active > .overview-icon, .app-well-app.app-folder:checked > .overview-icon {
   background-color: #5294E2;
@@ -1883,7 +1875,7 @@ transition-duration:300ms;
 
 .login-dialog-username,
 .user-widget-label {
-  color: #BAC3CF;
+  color: #000000;
   font-size: 120%;
   font-weight: bold;
   text-align: left;
@@ -1986,11 +1978,10 @@ transition-duration:300ms;
 #LookingGlassDialog {
   spacing: 4px;
   padding: 8px 8px 10px 8px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 1);
   border: 1px solid black;
-  border-image: url("common-assets/misc/bg.svg") 9 9 9 9;
   border-radius: 2px;
-  color: #BAC3CF; }
+  color: #ffffff; }
   #LookingGlassDialog > #Toolbar {
     padding: 3px;
     border: none;
@@ -2002,7 +1993,7 @@ transition-duration:300ms;
     -natural-hpadding: 12px;
     -minimum-hpadding: 6px;
     font-weight: bold;
-    color: #BAC3CF;
+    color: #ffffff;
     transition-duration: 100ms;
     padding-left: .3em;
     padding-right: .3em; }
@@ -2022,8 +2013,8 @@ transition-duration:300ms;
 .lg-dialog StEntry {
   selection-background-color: #5294E2;
   selected-color: #ffffff;
-  color: #BAC3CF;
-  background-color: rgba(102, 109, 132, 0.35);
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 1.0);
   border: 1px solid rgba(26, 28, 34, 0.35);
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); }
   .lg-dialog StEntry:focus {
@@ -2061,7 +2052,7 @@ transition-duration:300ms;
 .lg-extension {
   border: 1px solid rgba(0, 0, 0, 0.7);
   border-radius: 2px;
-  background-color: rgba(53, 57, 69, 0.95);
+  background-color: rgba(0,0,0,1.0);
   padding: 4px; }
 
 .lg-extension-name {
@@ -2071,7 +2062,251 @@ transition-duration:300ms;
   spacing: 6px; }
 
 #LookingGlassPropertyInspector {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 1.0);
   border: 1px solid grey;
   border-radius: 2px;
   padding: 6px; }
+
+/* Add Dash to Dock Support */
+/* Shrink the dash by reducing padding and border radius */
+#dashtodockContainer #dash {
+    padding: 1px 0px;
+    border-radius: 0px 3px 3px 0px;
+}
+
+#dashtodock #dash:rtl {
+    border-radius: 6px 0px 0px 6px;
+}
+
+#dashtodockContainer .dash-item-container > StButton {
+    transition-duration: 250;
+    background-size: contain;
+}
+
+#dashtodockContainer .dash-item-container > StButton {
+   padding: 1px 2px;
+}
+
+/* Dash height extended to the whole available vertical space */
+#dashtodockContainer.extended #dash {
+    border:0;
+    border-radius: 0;
+}
+
+/* Running and focused application style */
+
+#dashtodockContainer .app-well-app.running > .overview-icon {
+background-image:none;
+}
+
+#dashtodockContainer .app-well-app.focused > .overview-icon {
+    transition-duration: 250;
+    background-gradient-start: rgba(255, 255, 255, 1.0);
+    background-gradient-end: rgba(255, 255, 255, 0.8);
+    background-gradient-direction: vertical;
+    border-radius: 2px;
+    box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 1);
+}
+
+.sm-title {
+    font-size: 16px;
+    padding: 0px 25px 0px 0px;
+}
+
+.sm-label {
+    color: #000;
+    font-size: 12px;
+}
+
+.sm-value {
+    text-align: right;
+    min-width: 40px;
+}
+
+.sm-status-label {
+    color: #000;
+    font-size: 10px;
+    padding: 0 2px 0 5px;
+}
+
+.sm-unit-label,
+.sm-net-unit-label {
+    color: #000;
+    font-size: 8px;
+    padding: 6px 5px 0 2px;
+}
+
+.sm-disk-unit-label {
+    color: #000;
+    font-size: 10px;
+    padding: 0 5px 0 2px;
+}
+
+.sm-net-unit-label {
+    min-width: 25px;
+}
+
+.sm-perc-label {
+    color: #000;
+    font-size: 10px;
+    padding: 0 5px 0 2px;
+}
+
+.sm-temp-label {
+    color: #000;
+    font-size: 11px;
+    padding: 0 5px 0 2px;
+}
+
+.sm-status-value {
+    min-width: 25px;
+    text-align: right;
+}
+
+.sm-net-value {
+    min-width: 40px;
+    text-align: center;
+}
+
+.sm-disk-value {
+    min-width: 25px;
+    text-align: right;
+}
+
+.sm-big-status-value {
+    min-width: 42px;
+    text-align: right;
+}
+
+.sm-chart {
+    padding: 0 2px;
+}
+
+.sm-tooltip-box {
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #000;
+    background-color: rgba(255, 255, 255, 1.0);
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid #a5a5a5;
+}
+
+.sm-tooltip-item {
+    padding: 0px;
+    spacing: 10px;
+}
+.sm-status-icon {
+    padding: 0px 2px;
+    icon-size: 1.14em;
+}
+
+.sm-popup-menu-item-compact {
+}
+
+/* style definition when 'compact-display' option is activated */
+
+.sm-title-compact {
+    font-size: 12px;
+}
+
+.sm-label-compact {
+    color: #000;
+    font-size: 11px;
+} /* Bat, Net... units in menu items */
+
+.sm-value-compact {
+    font-size: 11px;
+    text-align: right;
+} /* Values in menu items */
+
+.sm-status-label-compact {
+    color: #000;
+    font-size: 8px;
+    padding: 2px 0px 0 0px;
+} /* names and Disk R and W signs in text items */
+
+.sm-unit-label-compact,
+.sm-net-unit-label-compact {
+    color: #000;
+    padding: 9px 3px 0px 1px;
+    text-align: right;
+    font-size: 7px;
+} /* Bat, Net... units in text items */
+
+.sm-disk-unit-label-compact {
+    color: #000;
+    padding: 9px 3px 0px 0px;
+    text-align: right;
+    font-size: 7px;
+} /* Disk units in text items */
+
+.sm-perc-label-compact {
+    padding: 9px 3px 0 0px;
+    color: #000;
+    font-size: 8px;
+} /* Cpu, Mem ... % sign in text items */
+
+.sm-temp-label-compact {
+    font-size: 10px;
+    color: #000;
+    padding: 3px 1px 0 1px;
+} /* Thermal °C sign in text items */
+
+.sm-status-value-compact {
+    padding:6px 0px 0 1px;
+    font-size:11px;
+    text-align: right;
+    min-width:16px;
+} /* Cpu, Mem... value in text items */
+
+.sm-net-value-compact {
+    padding:6px 0px 0 1px;
+    font-size:11px;
+    text-align: right;
+    min-width:24px;
+} /* Net value in text items */
+
+.sm-disk-value-compact {
+    padding: 6px 1px 0 1px;
+    font-size: 11px;
+    text-align: right;
+    min-width: 20px;
+} /* Disk value in text items */
+
+.sm-big-status-value-compact {
+    padding: 6px 0px 0px 1px;
+    font-size: 11px;
+    min-width: 38px;
+    text-align: right;
+} /* freq in text_items */
+
+.sm-chart-compact {
+    padding: 0 2px;
+}
+
+.sm-tooltip-box {
+    font-size: 0.85em;
+    font-weight: bold;
+    color: rgba(0,0,0,1.0);
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 5px;
+    padding: 3px;
+    border: 1px solid #a5a5a5;
+}
+
+.sm-tooltip-item-compact {
+    padding: 0px;
+    spacing: 10px;
+}
+
+.sm-status-icon-compact {
+    padding: 1px 0 0 2px;
+    icon-size: 1.00em;
+} /* BAT icon in text_items */
+
+.sm-popup-menu-item-compact {
+    font-size: 11px;
+    width: 20px;
+    padding: 1px 2px 1px 7px;
+}
