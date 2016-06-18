@@ -264,13 +264,13 @@ button {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   border: 1px solid;
   border-radius: 3px;
-  padding: 2px 6px;
+  padding: 1px 3px;
   color: #5c616c;
   outline-color: rgba(92, 97, 108, 0.3);
   border-color: #cfd6e6;
   background-color: #fbfbfc; }
   button separator {
-    margin: 4px 1px; }
+    margin: 2px 1px; }
   button.flat, button.sidebar-button {
     border-color: transparent;
     background-color: transparent;
@@ -315,26 +315,26 @@ button {
         color: rgba(255, 255, 255, 0.8); }
   button.image-button {
     min-width: 24px;
-    padding-left: 5px;
-    padding-right: 5px; }
+    padding-left: 2px;
+    padding-right: 2px; }
   button.text-button {
-    padding-left: 12px;
-    padding-right: 12px; }
+    padding-left: 6px;
+    padding-right: 6px; }
   button.text-button.image-button {
-    padding-left: 5px;
-    padding-right: 5px; }
+    padding-left: 2px;
+    padding-right: 2px; }
     button.text-button.image-button label:first-child {
-      padding-left: 8px;
-      padding-right: 2px; }
+      padding-left: 4px;
+      padding-right: 1px; }
     button.text-button.image-button label:last-child {
-      padding-right: 8px;
-      padding-left: 2px; }
+      padding-right: 4px;
+      padding-left: 1px; }
     button.text-button.image-button label:only-child {
-      padding-left: 8px;
-      padding-right: 8px; }
+      padding-left: 4px;
+      padding-right: 4px; }
     button.text-button.image-button.popup {
-      padding-right: 8px;
-      padding-left: 8px; }
+      padding-right: 4px;
+      padding-left: 4px; }
   button:drop(active), combobox:drop(active) button.combo {
     color: #F08437;
     border-color: #F08437;
@@ -931,7 +931,7 @@ actionbar {
 headerbar,
 .titlebar:not(headerbar) {
   min-height: 42px;
-  padding: 0 7px;
+  padding: 0 3px;
   border-width: 0 0 1px;
   border-style: solid;
   border-color: #262a33;
@@ -951,12 +951,12 @@ headerbar,
     .csd .titlebar:backdrop:not(headerbar) {
       background-color: #323843; }
   headerbar .title, .titlebar:not(headerbar) .title {
-    padding-left: 12px;
-    padding-right: 12px; }
+    padding-left: 6px;
+    padding-right: 6px; }
   headerbar .subtitle, .titlebar:not(headerbar) .subtitle {
     font-size: smaller;
-    padding-left: 12px;
-    padding-right: 12px; }
+    padding-left: 6px;
+    padding-right: 6px; }
   headerbar.selection-mode,
   .selection-mode.titlebar:not(headerbar) {
     color: #ffffff;
@@ -969,8 +969,8 @@ headerbar,
       color: rgba(255, 255, 255, 0.6); }
     headerbar.selection-mode .selection-menu, .selection-mode.titlebar:not(headerbar) .selection-menu {
       box-shadow: none;
-      padding-left: 10px;
-      padding-right: 10px; }
+      padding-left: 6px;
+      padding-right: 6px; }
       headerbar.selection-mode .selection-menu GtkArrow, .selection-mode.titlebar:not(headerbar) .selection-menu GtkArrow {
         -GtkArrow-arrow-scaling: 1; }
       headerbar.selection-mode .selection-menu .arrow, .selection-mode.titlebar:not(headerbar) .selection-menu .arrow {
@@ -1015,7 +1015,7 @@ headerbar,
       background-color: #2f343f; }
 
 .titlebar {
-  border-radius: 3px 3px 0 0; }
+  border-radius: 1px 1px 0 0; }
 
 headerbar entry, headerbar button, headerbar separator {
   margin-top: 6px;
@@ -1508,7 +1508,7 @@ menubar,
     color: rgba(207, 218, 231, 0.5); }
   menubar > menuitem,
   .menubar > menuitem {
-    padding: 6px 8px;
+    padding: 3px 4px;
     border: solid transparent;
     border-width: 0; }
     menubar > menuitem:hover,
@@ -1529,7 +1529,7 @@ menu,
   border: 1px solid #dcdfe3; }
   .csd menu, .csd
   .menu {
-    padding: 4px 0px;
+    padding: 2px 0px;
     border-radius: 2px;
     border: none; }
   menu separator,
@@ -1549,7 +1549,7 @@ menu,
   .menu menuitem {
     min-height: 16px;
     min-width: 40px;
-    padding: 4px;
+    padding: 2px;
     border: solid transparent;
     border-width: 1px 0 1px 0; }
     menu menuitem:hover,
@@ -1591,7 +1591,7 @@ menu,
     background-image: none;
     min-width: 16px;
     min-height: 16px;
-    padding: 4px;
+    padding: 2px;
     background-color: #ffffff;
     border-radius: 0; }
     menu > arrow.top,

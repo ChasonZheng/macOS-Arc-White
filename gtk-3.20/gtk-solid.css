@@ -315,26 +315,26 @@ button {
         color: rgba(255, 255, 255, 0.8); }
   button.image-button {
     min-width: 24px;
-    padding-left: 5px;
-    padding-right: 5px; }
+    padding-left: 2px;
+    padding-right: 2px; }
   button.text-button {
-    padding-left: 12px;
-    padding-right: 12px; }
+    padding-left: 6px;
+    padding-right: 6px; }
   button.text-button.image-button {
-    padding-left: 5px;
-    padding-right: 5px; }
+    padding-left: 2px;
+    padding-right: 2px; }
     button.text-button.image-button label:first-child {
-      padding-left: 8px;
-      padding-right: 2px; }
+      padding-left: 4px;
+      padding-right: 1px; }
     button.text-button.image-button label:last-child {
-      padding-right: 8px;
-      padding-left: 2px; }
+      padding-right: 4px;
+      padding-left: 1px; }
     button.text-button.image-button label:only-child {
-      padding-left: 8px;
-      padding-right: 8px; }
+      padding-left: 4px;
+      padding-right: 4px; }
     button.text-button.image-button.popup {
-      padding-right: 8px;
-      padding-left: 8px; }
+      padding-right: 4px;
+      padding-left: 4px; }
   button:drop(active), combobox:drop(active) button.combo {
     color: #F08437;
     border-color: #F08437;
@@ -473,19 +473,19 @@ button {
   .stack-switcher > button {
     outline-offset: -3px; }
     .stack-switcher > button > label {
-      padding-left: 6px;
-      padding-right: 6px; }
+      padding-left: 3px;
+      padding-right: 3px; }
     .stack-switcher > button > image {
-      padding-left: 6px;
-      padding-right: 6px;
+      padding-left: 3px;
+      padding-right: 3px;
       padding-top: 3px;
       padding-bottom: 3px; }
     .stack-switcher > button.text-button {
-      padding-left: 10px;
-      padding-right: 10px; }
+      padding-left: 5px;
+      padding-right: 5px; }
     .stack-switcher > button.image-button {
-      padding-left: 2px;
-      padding-right: 2px; }
+      padding-left: 1px;
+      padding-right: 1px; }
     .stack-switcher > button.needs-attention:active > label, .stack-switcher > button.needs-attention:active > image, .stack-switcher > button.needs-attention:checked > label, .stack-switcher > button.needs-attention:checked > image {
       animation: none;
       background-image: none; }
@@ -502,7 +502,7 @@ button {
     border-width: 1px; }
 
 .inline-toolbar toolbutton > button {
-  color: #5c616c;
+  color: #000000;
   outline-color: rgba(92, 97, 108, 0.3);
   border-color: #cfd6e6;
   background-color: #fbfbfc; }
@@ -3298,7 +3298,7 @@ workbench.csd > stack.titlebar:not(headerbar) {
   border: none;
   box-shadow: none; }
   workbench.csd > stack.titlebar:not(headerbar) headerbar, workbench.csd > stack.titlebar:not(headerbar) headerbar:first-child, workbench.csd > stack.titlebar:not(headerbar) headerbar:last-child {
-    border-radius: 4px 4px 0 0; }
+    border-radius: 2px 2px 0 0; }
 
 editortweak .linked > entry.search:focus + .gb-linked-scroller {
   border-top-color: #5294E2; }

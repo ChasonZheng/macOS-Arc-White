@@ -9,7 +9,7 @@ $darker_asset_suffix: if($darker=='true', '-dark', $asset_suffix);
 
 * {
   background-clip: padding-box;
-  -GtkToolButton-icon-spacing: 4;
+  -GtkToolButton-icon-spacing: 2;
   -GtkTextView-error-underline-color: $error_color;
 
   -GtkScrolledWindow-scrollbar-spacing: 0;
@@ -22,7 +22,7 @@ $darker_asset_suffix: if($darker=='true', '-dark', $asset_suffix);
   -GtkWidget-text-handle-width: 20;
   -GtkWidget-text-handle-height: 20;
 
-  -GtkDialog-button-spacing: 4;
+  -GtkDialog-button-spacing: 2;
   -GtkDialog-action-area-border: 0;
 
   // We use the outline properties to signal the focus properties
@@ -219,7 +219,7 @@ spinner {
 entry {
   min-height: 22px;
   border: 1px solid;
-  padding: 2px 8px;
+  padding: 2px 4px;
 
   caret-color: currentColor;
   border-radius: 3px;
@@ -232,8 +232,8 @@ entry {
   image { // icons inside the entry
     color: mix($fg_color,$base_color,80%);
 
-    &.left { padding-left: 0; padding-right: 5px; }
-    &.right { padding-right: 0; padding-left: 5px; }
+    &.left { padding-left: 0; padding-right: 2px; }
+    &.right { padding-right: 0; padding-left: 2px; }
   }
 
   &.flat {
@@ -357,12 +357,12 @@ button {
   min-width: 20px;
   transition: $button_transition;
   border: 1px solid;
-  border-radius: 3px;
-  padding: 2px 6px;
+  border-radius: 2px;
+  padding: 1px 3px;
 
   @include button(normal);
 
-  separator { margin: 4px 1px; }
+  separator { margin: 2px 0.5px; }
 
   &.flat {
     @include button(undecorated);
@@ -409,35 +409,35 @@ button {
 
   &.image-button {
     min-width: 24px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
 
   &.text-button {
-    padding-left: 12px;
+    padding-left: 6px;
     padding-right: 12px;
   }
 
   &.text-button.image-button {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
 
     label {
       &:first-child {
-        padding-left: 8px;
+        padding-left: 4px;
         padding-right: 2px;
       }
       &:last-child {
-        padding-right: 8px;
+        padding-right: 4px;
         padding-left: 2px;
       }
       &:only-child {
-        padding-left: 8px;
-        padding-right: 8px;
+        padding-left: 4px;
+        padding-right: 4px;
       }
     }
 
-    &.popup { padding-right: 8px; padding-left: 8px; }
+    &.popup { padding-right: 4px; padding-left: 4px; }
   }
 
   &:drop(active) {
@@ -741,8 +741,8 @@ menuitem.button.flat,
 modelbutton.flat {
   transition: none;
   min-height: 24px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
   outline-offset: -3px;
   border-radius: 2px;
 
@@ -754,10 +754,10 @@ modelbutton.flat {
 
   // FIXME: temporary workaround
   check:last-child,
-  radio:last-child { margin-left: 8px; }
+  radio:last-child { margin-left: 4px; }
 
   check:first-child,
-  radio:first-child { margin-right: 8px; }
+  radio:first-child { margin-right: 4px; }
 }
 
 modelbutton.flat arrow {
@@ -810,7 +810,7 @@ spinbutton {
   &:disabled { color: $insensitive_fg_color; }
 
   &:not(.vertical) {
-    entry { min-width: 28px; }
+    entry { min-width: 24px; }
 
     button, entry { @extend %linked; }
 
@@ -864,7 +864,7 @@ spinbutton {
 combobox {
   button.combo {
     min-width: 0;       // otherwise the arrow placement is unsymmetric
-    padding-left: 8px;  //
+    padding-left: 4px;  //
     padding-right: 8px  //
   }
   arrow {
@@ -986,7 +986,7 @@ headerbar,
 %titlebar {
 
   min-height: 42px;
-  padding: 0 7px;
+  padding: 0 3px;
 
   border-width: 0 0 1px;
   border-style: solid;
@@ -1011,13 +1011,13 @@ headerbar,
   }
 
   .title {
-    padding-left: 12px;
+    padding-left: 6px;
     padding-right: 12px;
   }
 
   .subtitle {
     font-size: smaller;
-    padding-left: 12px;
+    padding-left: 6px;
     padding-right: 12px;
     @extend .dim-label;
   }
@@ -1064,7 +1064,7 @@ headerbar,
   .csd &.default-decoration,             // needed under wayland, since all gtk3 windows are csd windows
   &.default-decoration:backdrop,
   .csd &.default-decoration:backdrop {
-    min-height: 28px;
+    min-height: 24px;
     padding: 0 3px;
     background-color: opacify($header_bg, 1);
     border-bottom-width: 0;
@@ -1553,7 +1553,7 @@ treeview.view {
   button.dnd,
   header.button.dnd {
     &, &:selected, &:hover, &:active {
-      padding: 0 6px;
+      padding: 0 3px;
       transition: none;
       color: $selected_fg_color;
       background-color: $selected_bg_color;
@@ -1579,7 +1579,7 @@ menubar,
   }
 
   > menuitem {
-    padding: 6px 8px;
+    padding: 6px 4px;
     border: solid transparent;
     border-width: 0;
 
@@ -1622,7 +1622,7 @@ menu,
   menuitem {
     min-height: 16px;
     min-width: 40px;
-    padding: 4px;
+    padding: 2px;
     border: solid transparent;
     border-width: 1px 0 1px 0;
     &:hover {
@@ -1906,7 +1906,7 @@ scrollbar {
     min-height: 6px;
     margin: -1px;
     border: 4px solid transparent;
-    border-radius: 8px;
+    border-radius: 4px;
     background-clip: padding-box;
     background-color: mix($fg_color, $bg_color, 40%);
 
@@ -2569,7 +2569,7 @@ messagedialog { // Message Dialog styling
     border-bottom: 1px solid darken($header_bg, 7%);
   }
 
-  .dialog-action-area button { padding: 8px; min-height: 0; }
+  .dialog-action-area button { padding: 4px; min-height: 0; }
 
   &.csd { // rounded bottom border styling for csd version
     &.background {
@@ -2681,8 +2681,8 @@ placessidebar {
       padding: 0 10px;
     }
     image.sidebar-icon {
-      &:dir(ltr) { padding-right: 8px; }
-      &:dir(rtl) { padding-left: 8px; }
+      &:dir(ltr) { padding-right: 4px; }
+      &:dir(rtl) { padding-left: 4px; }
     }
     label.sidebar-label {
       &:dir(ltr) { padding-right: 2px; }
@@ -2702,7 +2702,7 @@ placessidebar {
     }
 
     &.sidebar-placeholder-row {
-      padding: 0 8px;
+      padding: 0 4px;
       min-height: 2px;
       background-image: linear-gradient(to top, $drop_target_color);
       background-clip: content-box;
@@ -2739,8 +2739,8 @@ placesview {
 
   // this selects the "connect to server" label
   > actionbar > revealer > box > label {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 4px;
+    padding-right: 4px;
   }
 }
 
@@ -2776,8 +2776,8 @@ paned {
       background-position: left;
     }
     &:dir(rtl) {
-      margin: 0 0 0 -8px;
-      padding: 0 0 0 8px;
+      margin: 0 0 0 -4px;
+      padding: 0 0 0 4px;
       background-position: right;
     }
 
@@ -3076,7 +3076,7 @@ decoration {
               0 8px 8px 0 if($variant == 'light', opacify($_wm_border, 0.1), transparentize($_wm_border, 0.2));
 
   // this is used for the resize cursor area
-  margin: 10px;
+  margin: 4px;
 
   &:backdrop {
     // the transparent shadow here is to enforce that the shadow extents don't

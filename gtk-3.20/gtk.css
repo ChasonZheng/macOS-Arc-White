@@ -315,26 +315,26 @@ button {
         color: rgba(255, 255, 255, 0.8); }
   button.image-button {
     min-width: 24px;
-    padding-left: 5px;
-    padding-right: 5px; }
+    padding-left: 2px;
+    padding-right: 2px; }
   button.text-button {
-    padding-left: 12px;
-    padding-right: 12px; }
+    padding-left: 6px;
+    padding-right: 6px; }
   button.text-button.image-button {
     padding-left: 5px;
     padding-right: 5px; }
     button.text-button.image-button label:first-child {
-      padding-left: 8px;
+      padding-left: 4px;
       padding-right: 2px; }
     button.text-button.image-button label:last-child {
-      padding-right: 8px;
+      padding-right: 4px;
       padding-left: 2px; }
     button.text-button.image-button label:only-child {
-      padding-left: 8px;
-      padding-right: 8px; }
+      padding-left: 4px;
+      padding-right: 4px; }
     button.text-button.image-button.popup {
-      padding-right: 8px;
-      padding-left: 8px; }
+      padding-right: 4px;
+      padding-left: 4px; }
   button:drop(active), combobox:drop(active) button.combo {
     color: #F08437;
     border-color: #F08437;
@@ -733,8 +733,8 @@ menuitem.button.flat,
 modelbutton.flat {
   transition: none;
   min-height: 24px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
   outline-offset: -3px;
   border-radius: 2px; }
   menuitem.button.flat:hover,
@@ -742,17 +742,17 @@ modelbutton.flat {
     background-color: #edeff0; }
   menuitem.button.flat:checked,
   modelbutton.flat:checked {
-    color: #5c616c; }
+    color: #000000; }
   menuitem.button.flat check:last-child,
   menuitem.button.flat radio:last-child,
   modelbutton.flat check:last-child,
   modelbutton.flat radio:last-child {
-    margin-left: 8px; }
+    margin-left: 4px; }
   menuitem.button.flat check:first-child,
   menuitem.button.flat radio:first-child,
   modelbutton.flat check:first-child,
   modelbutton.flat radio:first-child {
-    margin-right: 8px; }
+    margin-right: 4px; }
 
 modelbutton.flat arrow.left {
   -gtk-icon-source: -gtk-icontheme("pan-start-symbolic"); }
@@ -945,18 +945,20 @@ headerbar,
   headerbar:backdrop,
   .titlebar:backdrop:not(headerbar) {
     transition: 200ms ease-out;
-    color: rgba(82, 93, 118, 0.5);
+    color: rgba(0,0,0,1.0);
     background-color: #eff0f2; }
     .csd headerbar:backdrop,
     .csd .titlebar:backdrop:not(headerbar) {
       background-color: rgba(239, 240, 242, 0.95); }
   headerbar .title, .titlebar:not(headerbar) .title {
-    padding-left: 12px;
-    padding-right: 12px; }
+    font-size: 12px;
+    color: rgba(0,0,0,1.0);
+    padding-left: 6px;
+    padding-right: 6px; }
   headerbar .subtitle, .titlebar:not(headerbar) .subtitle {
     font-size: smaller;
-    padding-left: 12px;
-    padding-right: 12px; }
+    padding-left: 6px;
+    padding-right: 6px; }
   headerbar.selection-mode,
   .selection-mode.titlebar:not(headerbar) {
     color: #ffffff;
@@ -969,8 +971,8 @@ headerbar,
       color: rgba(255, 255, 255, 0.6); }
     headerbar.selection-mode .selection-menu, .selection-mode.titlebar:not(headerbar) .selection-menu {
       box-shadow: none;
-      padding-left: 10px;
-      padding-right: 10px; }
+      padding-left: 4px;
+      padding-right: 4px; }
       headerbar.selection-mode .selection-menu GtkArrow, .selection-mode.titlebar:not(headerbar) .selection-menu GtkArrow {
         -GtkArrow-arrow-scaling: 1; }
       headerbar.selection-mode .selection-menu .arrow, .selection-mode.titlebar:not(headerbar) .selection-menu .arrow {
@@ -1052,8 +1054,8 @@ window.csd > .titlebar:not(headerbar):backdrop {
   min-width: 1px;
   min-height: 1px;
   background: none;
-  border-width: 0 1px;
-  border-image: linear-gradient(to bottom, rgba(82, 93, 118, 0) 25%, rgba(82, 93, 118, 0.15) 25%, rgba(82, 93, 118, 0.15) 75%, rgba(82, 93, 118, 0) 75%) 0 1/0 1px stretch; }
+  border-width: 0 0px;
+  border-image: linear-gradient(to bottom, rgba(82, 93, 118, 0) 25%, rgba(82, 93, 118, 0.15) 25%, rgba(82, 93, 118, 0.15) 75%, rgba(82, 93, 118, 0) 75%) 0 0 0px stretch; }
   .primary-toolbar separator:backdrop, headerbar separator.titlebutton:backdrop, .titlebar:not(headerbar) separator.titlebutton:backdrop {
     opacity: 0.6; }
 
@@ -1572,11 +1574,11 @@ menu,
       menu menuitem arrow:dir(ltr),
       .menu menuitem arrow:dir(ltr) {
         -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
-        margin-left: 10px; }
+        margin-left: 5px; }
       menu menuitem arrow:dir(rtl),
       .menu menuitem arrow:dir(rtl) {
         -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
-        margin-right: 10px; }
+        margin-right: 5px; }
     menuitem accelerator {
       color: alpha(currentColor,0.55); }
     menuitem check, menuitem radio {
@@ -2975,7 +2977,7 @@ decoration {
 
 headerbar.default-decoration button.titlebutton,
 .titlebar.default-decoration button.titlebutton {
-  padding: 0 4px;
+  padding: 0 2px;
   min-width: 0;
   min-height: 0;
   margin: 0; }
@@ -2990,7 +2992,7 @@ headerbar button.titlebutton,
   background-color: rgba(231, 232, 235, 0); }
   headerbar button.titlebutton:hover,
   .titlebar button.titlebutton:hover {
-    color: rgba(82, 93, 118, 0.8);
+    color: rgba(0,0,0,1.0);
     outline-color: rgba(82, 93, 118, 0.1);
     border-color: rgba(82, 93, 118, 0.1);
     background-color: rgba(251, 251, 252, 0.9); }
@@ -3009,7 +3011,9 @@ headerbar button.titlebutton,
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    border-width: 0; }
+    border-width: 0;
+    margin-left: 0px;
+    margin-right: 0px; }
     headerbar button.titlebutton.close:backdrop, headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop,
     .titlebar button.titlebutton.close:backdrop,
     .titlebar button.titlebutton.maximize:backdrop,
@@ -3185,7 +3189,7 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
   background-image: linear-gradient(to bottom, #ffffff); }
 
 .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button {
-  color: rgba(82, 93, 118, 0.8);
+  color: rgba(0,0,0, 1.0);
   outline-color: rgba(82, 93, 118, 0.1);
   border-color: rgba(82, 93, 118, 0.1);
   background-color: rgba(251, 251, 252, 0.9); }
@@ -3519,8 +3523,8 @@ button.documents-favorite:active:hover {
     color: #5c616c; }
 
 .panel {
-  background-color: transparent;
-  color: white;
+  background-color: white;
+  color: black;
   font-weight: bold;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   -gtk-icon-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
