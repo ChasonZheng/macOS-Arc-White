@@ -451,8 +451,8 @@ style "murrine-panel" = "murrine-thin" {
 
 	bg[NORMAL] = @panel_bg_color
 	bg[PRELIGHT] =  @panel_bg_color
-	bg[SELECTED] =  @selected_bg_color
-	bg[ACTIVE] = @selected_bg_color
+	bg[SELECTED] = "#87CEEB"
+	bg[ACTIVE] = "#87CEEB"
 	bg[INSENSITIVE] = @panel_bg_color
 
 	fg[NORMAL] = @panel_fg_color
@@ -783,14 +783,14 @@ widget_class "*XfsmLogoutDialog*GtkButton" style "xfsm-logout-button"
 
 style "my-thunar-sidebar"
 {
-	GtkTreeView::odd_row_color = "#353945"
-	GtkTreeView::even_row_color = "#282f31"
+	GtkTreeView::odd_row_color = @menu_bg_color
+	GtkTreeView::even_row_color = @menubar
 
 	base[NORMAL] = "#f5f6f7"
 	base[INSENSITIVE] = "#cccccc"
 
-	text[NORMAL] = "#F2F2F2"
-  text[ACTIVE] = "#F5F5F5"
+	text[NORMAL] = "#000000"
+  text[ACTIVE] = "#111111"
   text[SELECTED] = "#ffffff"
 }
 
