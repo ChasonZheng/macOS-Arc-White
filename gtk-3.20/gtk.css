@@ -1507,7 +1507,7 @@ menubar,
 .menubar {
   -GtkWidget-window-dragging: true;
   padding: 0px;
-  background-color: #4a9c35;
+  background-color: #F5F5F5;
   color: #000; }
   menubar:backdrop,
   .menubar:backdrop {
@@ -1561,7 +1561,7 @@ menu,
     menu menuitem:hover,
     .menu menuitem:hover {
       color: #000;
-      background-color: #4a9;
+      background-color: #5294E2
       border: solid rgba(0, 0, 0, 0.08);
       border-width: 1px 0 1px 0; }
     menu menuitem:disabled,
@@ -3435,7 +3435,7 @@ button.documents-favorite:active:hover {
   background-color: #49f; }
   .gnome-panel-menu-bar .wnck-pager:hover,
   .mate-panel-menu-bar .wnck-pager:hover {
-    background-color: #4a9; }
+    background-color: #5294E2 }
   .gnome-panel-menu-bar .wnck-pager:selected,
   .mate-panel-menu-bar .wnck-pager:selected {
     color: #a9caf1;
@@ -3447,7 +3447,7 @@ button.documents-favorite:active:hover {
   -NaTrayApplet-icon-size: 16px; }
 
 .xfce4-panel.panel {
-  background-color: rgba(43, 46, 55, 0.95);
+  background-color: rgba(255,255,255, 0.95);
   text-shadow: none;
   -gtk-icon-shadow: none; }
 
@@ -3469,11 +3469,11 @@ button.documents-favorite:active:hover {
   color: #000;
   border-radius: 0;
   border: none;
-  background-color: #4a9; }
+  background-color: #5294E2 }
   .gnome-panel-menu-bar button:hover:not(#tasklist-button),
   .mate-panel-menu-bar button:hover:not(#tasklist-button), .xfce4-panel.panel button.flat:hover, .xfce4-panel.panel button.sidebar-button:hover {
     border: none;
-    background-color: #4a9; }
+    background-color: #5294E2 }
   .gnome-panel-menu-bar button:active:not(#tasklist-button),
   .mate-panel-menu-bar button:active:not(#tasklist-button), .xfce4-panel.panel button.flat:active, .xfce4-panel.panel button.sidebar-button:active, .gnome-panel-menu-bar button:checked:not(#tasklist-button),
   .mate-panel-menu-bar button:checked:not(#tasklist-button), .xfce4-panel.panel button.flat:checked, .xfce4-panel.panel button.sidebar-button:checked {
@@ -4113,11 +4113,11 @@ filechooser.maximized placessidebar.sidebar,
   background-color: rgba(42, 45, 55, 0.95); }
 
 filechooser actionbar {
-  color: #BAC3CF;
-  background-color: rgba(53, 57, 69, 0.95);
+  color: rgba(255,255,255,1.0);
+  background-color: rgba(53, 57, 55, 0.95);
   border-color: rgba(37, 40, 49, 0.95); }
   filechooser actionbar label, filechooser actionbar combobox {
-    color: #BAC3CF; }
+    color: rgba(255,255,255,1.0); }
 
 .gedit-bottom-panel-paned {
   background-color: #ffffff; }
@@ -4143,12 +4143,12 @@ filechooser actionbar {
       color: #BAC3CF; }
 
 filechooser actionbar button {
-  color: #BAC3CF;
+  color: #ffffff;
   outline-color: rgba(186, 195, 207, 0.3);
   border-color: rgba(26, 28, 34, 0.35);
   background-color: rgba(102, 109, 132, 0.35); }
   .caja-side-pane > box button:hover:not(:active), filechooser actionbar button:hover {
-    color: #BAC3CF;
+    color: #FFF;
     outline-color: rgba(186, 195, 207, 0.3);
     border-color: rgba(26, 28, 34, 0.35);
     background-color: rgba(119, 127, 151, 0.45); }
@@ -4163,7 +4163,7 @@ filechooser actionbar button {
     background-color: rgba(102, 109, 132, 0.2); }
 
 filechooser actionbar entry {
-  color: #BAC3CF;
+  color: #FFF;
   border-color: rgba(26, 28, 34, 0.35);
   background-image: linear-gradient(to bottom, rgba(102, 109, 132, 0.35));
   background-color: transparent; }
@@ -4174,7 +4174,7 @@ filechooser actionbar entry {
     border-color: rgba(26, 28, 34, 0.35);
     background-image: linear-gradient(to bottom, #5294E2); }
   filechooser actionbar entry:disabled {
-    color: rgba(186, 195, 207, 0.55);
+    color: #FFF;
     background-image: linear-gradient(to bottom, rgba(102, 109, 132, 0.2)); }
 
 filechooser placessidebar.sidebar scrollbar,
