@@ -784,7 +784,7 @@ widget_class "*XfsmLogoutDialog*GtkButton" style "xfsm-logout-button"
 style "my-thunar-sidebar"
 {
 	GtkTreeView::odd_row_color = @menu_bg_color
-	GtkTreeView::even_row_color = @menubar
+	GtkTreeView::even_row_color = @menubar_bg_color
 
 	base[NORMAL] = "#f5f6f7"
 	base[INSENSITIVE] = "#cccccc"
