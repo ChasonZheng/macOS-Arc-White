@@ -710,7 +710,7 @@ StScrollBar {
     transition-duration: 200ms;/*nonstatus*/}
 .panel-button:hover {
     background-color: #4a90d9;
-    color: white;
+    color: #000;
     text-shadow:white 0px 0px 0px;}
 .panel-button:active,
 .panel-button:overview,
@@ -720,7 +720,7 @@ StScrollBar {
     border-image: none;
     background-color: #4a90d9;
     background-size:contain;
-    color: white;
+    color: #000;
     text-shadow:white 0px 0px 0px;
     background-color: #0169d9;
     box-shadow: inset 0px 0 0 rgba(0,0,0,0);}
@@ -758,7 +758,6 @@ StScrollBar {
 .panel-status-indicators-box,
 .panel-status-menu-box {
     spacing: 2px;}
-
 
 /* Replaces the activities text with a custom image. Height and width should use the same size as the image file. */
 #panelActivities {
