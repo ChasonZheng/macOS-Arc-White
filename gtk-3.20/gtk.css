@@ -3524,7 +3524,7 @@ button.documents-favorite:active:hover {
     color: #5c616c; }
 
 .panel {
-  background-color: white;
+  background-color: transparent;
   color: black;
   font-weight: bold;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
