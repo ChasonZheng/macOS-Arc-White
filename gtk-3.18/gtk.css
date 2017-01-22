@@ -1078,13 +1078,13 @@ GtkComboBox {
   border-left-style: none; }
 
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):hover, .primary-toolbar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):hover, .header-bar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):hover {
-  box-shadow: inset 1px 0 rgba(82, 93, 118, 0.1), inset -1px 0 #000000; }
+  box-shadow: inset 1px 0 rgba(82, 93, 118, 0.1), inset -1px 0 rgba(231, 232, 235, 0);; }
 
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover, .primary-toolbar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover, .header-bar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover {
-  box-shadow: inset -1px 0 #000000; }
+  box-shadow: inset -1px 0 rgba(231, 232, 235, 0);; }
 
 .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover, .header-bar .linked:not(.vertical):not(.path-bar).stack-switcher > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover, .primary-toolbar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover, .header-bar .linked:not(.vertical).path-bar > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover {
-  box-shadow: inset 1px 0 #000000; }
+  box-shadow: inset 1px 0 rgba(231, 232, 235, 0);; }
 
 .primary-toolbar .linked:not(.vertical):not(.path-bar) > .entry + .entry, .header-bar .linked:not(.vertical):not(.path-bar) > .entry + .entry {
   border-left-color: rgba(82, 93, 118, 0); }
@@ -2819,13 +2819,13 @@ NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .
     color: #000000; }
 
 NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:hover:not(:checked):not(:active):not(:only-child):hover {
-  box-shadow: inset 1px 0 rgba(82, 93, 118, 0.1), inset -1px 0 #000000; }
+  box-shadow: inset 1px 0 rgba(82, 93, 118, 0.1), inset -1px 0 rgba(231, 232, 235, 0);; }
 
 NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover {
-  box-shadow: inset -1px 0 #000000; }
+  box-shadow: inset -1px 0 rgba(231, 232, 235, 0);; }
 
 NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover {
-  box-shadow: inset 1px 0 #000000; }
+  box-shadow: inset 1px 0 rgba(231, 232, 235, 0);; }
 
 .gedit-headerbar-paned {
   color: rgba(212, 213, 219, 0.95); }

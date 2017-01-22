@@ -1025,15 +1025,15 @@ GtkComboBox {
   .primary-toolbar .linked.stack-switcher > .button:insensitive, .header-bar .linked.stack-switcher > .button:insensitive, .primary-toolbar .linked.path-bar > .button:insensitive, .header-bar .linked.path-bar > .button:insensitive {
     color: #000000; }
   .primary-toolbar .linked.stack-switcher > .button:hover, .header-bar .linked.stack-switcher > .button:hover, .primary-toolbar .linked.path-bar > .button:hover, .header-bar .linked.path-bar > .button:hover {
-    box-shadow: inset 1px 0 rgba(82, 93, 118, 0.1), inset -1px 0 #000000; }
+    box-shadow: inset 1px 0 rgba(82, 93, 118, 0.1), inset -1px 0 rgba(231, 232, 235, 0);; }
   .primary-toolbar .linked.stack-switcher > .button:active, .header-bar .linked.stack-switcher > .button:active, .primary-toolbar .linked.stack-switcher > .button:checked, .header-bar .linked.stack-switcher > .button:checked, .primary-toolbar .linked.path-bar > .button:active, .header-bar .linked.path-bar > .button:active, .primary-toolbar .linked.path-bar > .button:checked, .header-bar .linked.path-bar > .button:checked {
     box-shadow: none; }
   .primary-toolbar .linked.stack-switcher > .button:first-child:hover, .header-bar .linked.stack-switcher > .button:first-child:hover, .primary-toolbar .linked.path-bar > .button:first-child:hover, .header-bar .linked.path-bar > .button:first-child:hover {
-    box-shadow: inset -1px 0 #000000; }
+    box-shadow: inset -1px 0 rgba(231, 232, 235, 0);; }
   .primary-toolbar .linked.stack-switcher > .button:first-child:active, .header-bar .linked.stack-switcher > .button:first-child:active, .primary-toolbar .linked.stack-switcher > .button:first-child:checked, .header-bar .linked.stack-switcher > .button:first-child:checked, .primary-toolbar .linked.path-bar > .button:first-child:active, .header-bar .linked.path-bar > .button:first-child:active, .primary-toolbar .linked.path-bar > .button:first-child:checked, .header-bar .linked.path-bar > .button:first-child:checked {
     box-shadow: none; }
   .primary-toolbar .linked.stack-switcher > .button:last-child:hover, .header-bar .linked.stack-switcher > .button:last-child:hover, .primary-toolbar .linked.path-bar > .button:last-child:hover, .header-bar .linked.path-bar > .button:last-child:hover {
-    box-shadow: inset 1px 0 #000000; }
+    box-shadow: inset 1px 0 rgba(231, 232, 235, 0);; }
   .primary-toolbar .linked.stack-switcher > .button:last-child:active, .header-bar .linked.stack-switcher > .button:last-child:active, .primary-toolbar .linked.stack-switcher > .button:last-child:checked, .header-bar .linked.stack-switcher > .button:last-child:checked, .primary-toolbar .linked.path-bar > .button:last-child:active, .header-bar .linked.path-bar > .button:last-child:active, .primary-toolbar .linked.path-bar > .button:last-child:checked, .header-bar .linked.path-bar > .button:last-child:checked {
     box-shadow: none; }
   .primary-toolbar .linked.stack-switcher > .button:only-child:hover, .header-bar .linked.stack-switcher > .button:only-child:hover, .primary-toolbar .linked.path-bar > .button:only-child:hover, .header-bar .linked.path-bar > .button:only-child:hover {
@@ -1153,12 +1153,12 @@ GtkComboBox {
   box-shadow: none; }
 
 .primary-toolbar GtkComboBox.combobox-entry .button:dir(ltr), .header-bar GtkComboBox.combobox-entry .button:dir(ltr) {
-  box-shadow: inset 1px 0 #000000; }
+  box-shadow: inset 1px 0 rgba(231, 232, 235, 0);; }
   .primary-toolbar GtkComboBox.combobox-entry .button:dir(ltr):insensitive, .header-bar GtkComboBox.combobox-entry .button:dir(ltr):insensitive {
     box-shadow: inset 1px 0 rgba(82, 93, 118, 0); }
 
 .primary-toolbar GtkComboBox.combobox-entry .button:dir(rtl), .header-bar GtkComboBox.combobox-entry .button:dir(rtl) {
-  box-shadow: inset -1px 0 #000000; }
+  box-shadow: inset -1px 0 rgba(231, 232, 235, 0);; }
   .primary-toolbar GtkComboBox.combobox-entry .button:dir(rtl):insensitive, .header-bar GtkComboBox.combobox-entry .button:dir(rtl):insensitive {
     box-shadow: inset -1px 0 rgba(82, 93, 118, 0); }
 
@@ -2659,15 +2659,15 @@ NemoWindow .primary-toolbar NemoPathBar.linked > .button {
   NemoWindow .primary-toolbar NemoPathBar.linked > .button:insensitive {
     color: #000000; }
   NemoWindow .primary-toolbar NemoPathBar.linked > .button:hover {
-    box-shadow: inset 1px 0 rgba(82, 93, 118, 0.1), inset -1px 0 #000000; }
+    box-shadow: inset 1px 0 rgba(82, 93, 118, 0.1), inset -1px 0 rgba(231, 232, 235, 0);; }
   NemoWindow .primary-toolbar NemoPathBar.linked > .button:active, NemoWindow .primary-toolbar NemoPathBar.linked > .button:checked {
     box-shadow: none; }
   NemoWindow .primary-toolbar NemoPathBar.linked > .button:first-child:hover {
-    box-shadow: inset -1px 0 #000000; }
+    box-shadow: inset -1px 0 rgba(231, 232, 235, 0);; }
   NemoWindow .primary-toolbar NemoPathBar.linked > .button:first-child:active, NemoWindow .primary-toolbar NemoPathBar.linked > .button:first-child:checked {
     box-shadow: none; }
   NemoWindow .primary-toolbar NemoPathBar.linked > .button:last-child:hover {
-    box-shadow: inset 1px 0 #000000; }
+    box-shadow: inset 1px 0 rgba(231, 232, 235, 0);; }
   NemoWindow .primary-toolbar NemoPathBar.linked > .button:last-child:active, NemoWindow .primary-toolbar NemoPathBar.linked > .button:last-child:checked {
     box-shadow: none; }
   NemoWindow .primary-toolbar NemoPathBar.linked > .button:only-child:hover {
