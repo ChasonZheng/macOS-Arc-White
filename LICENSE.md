@@ -1,4 +1,4 @@
-COPYRIGHT (c) 2016 Brenton Horne <brentonhorne77@gmail.com>
+COPYRIGHT (c) 2016- Brenton Horne <brentonhorne77@gmail.com>, LinxGem33, horst3180
 
 GNU GENERAL PUBLIC LICENSE
    Version 3, 29 June 2007
