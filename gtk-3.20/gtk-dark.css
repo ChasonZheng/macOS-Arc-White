@@ -3588,7 +3588,7 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
   background-image: linear-gradient(to bottom, white, white);
   background-color: transparent; }
   .gala-notification .title, .gala-notification .label {
-    color: #5c616c; }
+    color: #000000; }
 
 .panel {
   background-color: transparent;

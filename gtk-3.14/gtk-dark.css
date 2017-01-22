@@ -3156,7 +3156,7 @@ MarlinViewWindow FMListView, MarlinViewWindow FMColumnView {
   background-image: linear-gradient(to bottom, white);
   background-color: transparent; }
   .gala-notification .title, .gala-notification .label {
-    color: #5c616c; }
+    color: #000000; }
 
 .panel {
   background-color: transparent;
