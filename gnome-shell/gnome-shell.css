@@ -7,7 +7,7 @@
   transition-duration: 0.2s; }
 
 stage {
-    font-family: sfns display, product sans, helvetica, open sans, source sans pro, segoe ui, ubuntu, nokia pure text, lucida grande, cantarell, sans-serif;
+    font-family: noto sans, liberation sans, sfns display, product sans, helvetica, open sans, source sans pro, segoe ui, ubuntu, nokia pure text, lucida grande, cantarell, sans-serif;
     font-size: 10.5pt;
     color: #333;}
 
