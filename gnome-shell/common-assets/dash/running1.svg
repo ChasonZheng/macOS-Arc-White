@@ -11,12 +11,12 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="90.000000"
    inkscape:export-xdpi="90.000000"
-   width="24"
-   height="24"
+   width="28"
+   height="4"
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="activities-active.svg"
+   sodipodi:docname="running1.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -24,23 +24,23 @@
      stroke="#ef2929"
      fill="#f57900"
      id="base"
-     pagecolor="#bebebe"
-     bordercolor="#525252"
+     pagecolor="#ffffff"
+     bordercolor="#808080"
      borderopacity="1"
-     inkscape:pageopacity="1"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.627417"
-     inkscape:cx="3.5498385"
-     inkscape:cy="11.547553"
+     inkscape:zoom="13.979167"
+     inkscape:cx="8.9568436"
+     inkscape:cy="-0.4854291"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="true"
      inkscape:window-width="1600"
-     inkscape:window-height="848"
+     inkscape:window-height="851"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="24"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -48,7 +48,7 @@
      gridtolerance="10000"
      inkscape:object-nodes="true"
      inkscape:snap-grids="true"
-     showguides="false"
+     showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-maximized="1"
      inkscape:bbox-nodes="true"
@@ -62,7 +62,9 @@
      guidecolor="#ff0b00"
      guideopacity="1"
      guidehicolor="#001aff"
-     guidehiopacity="0.49803922">
+     guidehiopacity="0.49803922"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:snap-page="true">
     <inkscape:grid
        type="xygrid"
        id="grid3123"
@@ -70,10 +72,6 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true" />
-    <sodipodi:guide
-       position="12,12"
-       orientation="1,0"
-       id="guide4135" />
   </sodipodi:namedview>
   <defs
      id="defs3" />
@@ -132,27 +130,13 @@
      inkscape:groupmode="layer"
      inkscape:label="Base"
      id="layer1"
-     transform="translate(0,-276)">
+     transform="translate(0,-296)">
     <rect
-       style="opacity:1;fill:#5294e2;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4138"
-       width="2"
+       style="opacity:1;fill:#5294e2;fill-opacity:1;stroke:none"
+       id="rect4270-9"
+       width="8"
        height="2"
-       x="5"
-       y="287" />
-    <rect
-       style="display:inline;opacity:1;fill:#5294e2;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-       id="rect4138-6"
-       width="2"
-       height="2"
-       x="11"
-       y="287" />
-    <rect
-       style="display:inline;opacity:1;fill:#5294e2;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-       id="rect4138-9"
-       width="2"
-       height="2"
-       x="17"
-       y="287" />
+       x="10"
+       y="298" />
   </g>
 </svg>
