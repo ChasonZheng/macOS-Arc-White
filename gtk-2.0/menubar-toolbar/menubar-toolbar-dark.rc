@@ -4,8 +4,8 @@ style "menubar" {
   fg[NORMAL] = "#000000"
   fg[PRELIGHT] = "#000000"
   fg[ACTIVE] = "#000000"
-  fg[SELECTED] = @selected_fg_color
-  fg[INSENSITIVE] = shade(0.7, "#000000")
+  fg[SELECTED] = "#000000"
+  fg[INSENSITIVE] = "#000000"
 
   xthickness = 0
   ythickness = 0
@@ -129,7 +129,7 @@ style "toolbar_entry" {
 
   base[NORMAL] = "#000000"
   base[ACTIVE] = "#000000"
-  base[INSENSITIVE] = "#39404d"
+  base[INSENSITIVE] = "#000000"
 
   text[NORMAL] = "#000000"
 
