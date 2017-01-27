@@ -7,6 +7,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=macOS-Arc-White
 MetacityTheme=macOS-Arc-White
-IconTheme=MacBuntu-Remix
+IconTheme=MacBuntu-OS
 CursorTheme=mac-cursor
 ButtonLayout=close,minimize,maximize:menu
