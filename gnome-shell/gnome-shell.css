@@ -722,86 +722,217 @@ StScrollBar {
 .tile-preview-left.tile-preview-right.on-primary {
   border-radius: 0 0 0 0; }
 
-/***********
- * Top Bar *
- ***********/
-#panel {
-    background-gradient-direction:none;
-    background-color: rgba(255,255,255,0.75);
-/*    background-color: rgba(46,51,56,0.9);
-    border:1px solid rgba(200,200,200,.5);*/
-    box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.5);
-    border: 0px solid rgba(90,105,111,0.5);
- /*	   box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.15);*/
-    border-top:0px;border-right:0px;border-left:0px;
-    font-weight: bold;
-    height: 26px;}
+  #panel {
+      background-gradient-direction:none;
+      background-color: rgba(255,255,255,0.75);
+  /*    background-color: rgba(46,51,56,0.9);
+      border:1px solid rgba(200,200,200,.5);*/
+      box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.5);
+      border: 0px solid rgba(90,105,111,0.5);
+   /*	   box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.15);*/
+      border-top:0px;border-right:0px;border-left:0px;
+      font-weight: 300;
+      height: 26px;}
   #panel:overview {
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: inset 0px rgba(0,0,0,0)}
+  #panel:overview .panel-button {
+        color: rgba(255,255,255,.5);
+        border-radius: 0px 0px 4px 4px}
+  #panel:overview .panel-button:hover,
+  #panel:overview .panel-button:active {color: white; background-color: transparent;}
+
+  #panel.unlock-screen,
+  #panel.login-screen {
+      background-color: transparent;}
+
+  #panelLeft, #panelCenter {
+      spacing: 4px;}
+
+  #panelLeft:ltr {
+      padding-right: 4px;}
+
+  #panelLeft:rtl {
+      padding-left: 4px;}
+
+  #panelRight:ltr {
+      padding-left: 4px;}
+
+  #panelRight:rtl {
+      padding-right: 4px;}
+
+  .panel-corner {
+  	-panel-corner-radius: 0px;
+  	-panel-corner-background-color: transparent;
+  	-panel-corner-border-width: 0px;
+  	-panel-corner-border-color: transparent;}
+
+  .panel-corner:active,
+  .panel-corner:overview,
+  .panel-corner:focus {
+  	-panel-corner-border-color: transparent;}
+
+  .panel-corner.lock-screen,
+  .panel-corner.unlock-screen,
+  .panel-corner.login-screen {
+  	-panel-corner-background-color: transparent;
+  	-panel-corner-border-color: transparent;}
+
+  #appMenu {
+      spinner-image: url("resource:///org/gnome/shell/theme/process-working.svg");
+    color: #292121;
+    padding: 0 8px 0 0px;
+    spacing: 4px;
+      font-weight: 300}
+
+  .panel-button:hover #appMenu {
     background-color: transparent;
-    border-color: transparent;
-    box-shadow: inset 0px rgba(0,0,0,0)}
-#panel:overview .panel-button {
-      color: rgba(255,255,255,.5);
-      border-radius: 0px 0px 4px 4px}
-#panel:overview .panel-button:hover,
-#panel:overview .panel-button:active {color:white}
-#panel:overview #panelActivities:active,
-#panel:overview #panelActivities:overview {
-	color:transparent
-}, #panel.unlock-screen, #panel.login-screen, #panel.lock-screen {
-    background-color: rgba(0, 0, 0, 0.01);
-    box-shadow: inset 0 2px 0 #13191c; }
-  #panel #panelLeft,
-  #panel #panelCenter {
-    spacing: 0; }
-  #panel .panel-corner {
-    -panel-corner-radius: 0;
-    -panel-corner-background-color: #13191c;
-    -panel-corner-border-width: 2px;
-    -panel-corner-border-color: transparent; }
-    #panel .panel-corner:hover {
-      background-color: rgba(0, 0, 0, 0.01);
-      box-shadow: inset 0 2px 0 rgba(236, 239, 241, 0.4); }
-    #panel .panel-corner:active, #panel .panel-corner:overview, #panel .panel-corner:focus {
-      -panel-corner-border-color: transparent;
-      background-color: rgba(0, 0, 0, 0.01);
-      box-shadow: inset 0 2px 0 #00BCD4; }
-    #panel .panel-corner.lock-screen, #panel .panel-corner.login-screen, #panel .panel-corner.unlock-screen {
-      -panel-corner-radius: 0;
-      -panel-corner-background-color: transparent;
-      -panel-corner-border-color: transparent; }
-  #panel .panel-button {
--natural-hpadding: 6px;/*jarak item2 panel def 12px*/
-    -minimum-hpadding: 4px;
-    font-weight: normal;
-    color: #000;/*tulisan toolbar scr umum*/
-    transition-duration: 200ms;/*nonstatus*/}
-    #panel .panel-button .app-menu-icon {
-      -st-icon-style: symbolic;
-      margin-left: 4px;
-      margin-right: 4px; }
-    #panel .panel-button:hover {
-    background-color: #5294e2;
-    color: white;
-    text-shadow:white 0px 0px 0px;}
-    #panel .panel-button:active, #panel .panel-button:focus, #panel .panel-button:checked, #panel .panel-button:overview {
-      background-color: gray;
-      box-shadow: inset 0 2px 0 #5294e2;
-      color: #FFFFFF; }
-      #panel .panel-button:active > .system-status-icon, #panel .panel-button:focus > .system-status-icon, #panel .panel-button:checked > .system-status-icon, #panel .panel-button:overview > .system-status-icon {
-        icon-shadow: none; }
-    #panel .panel-button .system-status-icon {
-      icon-size: 16px;
-      padding: 0 2px; }
-    .unlock-screen #panel .panel-button, .login-screen #panel .panel-button, .lock-screen #panel .panel-button {
-      color: #ECEFF1; }
-      .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active, .lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
-        color: #FFFFFF; }
-  #panel .panel-status-indicators-box,
-  #panel .panel-status-menu-box {
-    spacing: 6px; }
-  #panel .screencast-indicator {
-    color: #4DB6AC; }
+    color: #0077ea;}
+
+  /* Remove Shadows of Panel-buttons of GNOME 3.26 */
+  #panel .panel-button .system-status-icon,
+  #panel .panel-button .app-menu-icon > StIcon,
+  #panel .panel-button .popup-menu-arrow {
+    text-shadow: none;
+    icon-shadow: none;
+  }
+
+   #panel .panel-button {
+    text-shadow: none;
+  }
+
+   #panel .panel-button:hover {
+    text-shadow: none;
+  }
+
+  #panel .panel-button:hover .system-status-icon,
+  #panel .panel-button:hover .app-menu-icon > StIcon,
+  #panel .panel-button:hover .popup-menu-arrow {
+    text-shadow: none;
+    icon-shadow: none;
+  }
+
+  #panel.solid .panel-button {
+    text-shadow: none;
+  }
+
+  #panel.solid .system-status-icon,
+  #panel.solid .app-menu-icon > StIcon,
+  #panel.solid .popup-menu-arrow {
+    icon-shadow: none;
+    text-shadow: none;
+  }
+
+
+  /* used for the app menu header only */
+  .label-shadow {
+      color: rgba(0,0,0,0.0);}
+  .panel-button #appMenuIcon {
+  	app-icon-bottom-clip: 0px;
+  	height: 0px;
+  	width: 12px;}
+  .panel-button:active #appMenuIcon,
+  .panel-button:checked #appMenuIcon,
+  .panel-button:focus #appMenuIcon {
+      app-icon-bottom-clip: 0px;}
+  .app-menu-icon {
+      width: 0px;
+      height: 0px;
+      margin: 4;
+      -st-icon-style: regular;}
+  .panel-button {
+      -natural-hpadding: 6px;/*jarak item2 panel def 12px*/
+      -minimum-hpadding: 4px;
+      font-weight: normal;
+      color: #333;/*tulisan toolbar scr umum*/
+      transition-duration: 200ms;/*nonstatus*/}
+  .panel-button:hover {
+      background-color: transparent; /* rgba(41, 33, 33, 0.3);*/
+      color: #0077ea;}
+  .panel-button:active,
+  .panel-button:overview,
+  .panel-button:focus {
+  /*    border-image: url("panel-button-border.svg") 6 10 0 2;
+      background-image: url("panel-button-highlight-wide.svg");*/
+      border-image: none;
+      background-image: url("./assets/panel-button-highlight-wide.svg");
+      background-size:contain;
+      color: #0077ea;
+      background-color: transparent; /*rgba(41, 33, 33, 0.3);*/
+      box-shadow: inset 0px 0 0 rgba(0,0,0,0);}
+  .panel-status-button:active,
+  .panel-status-button:checked,
+  .panel-status-button:focus {
+      background-image: url("./assets/panel-button-highlight-narrow.svg");
+      background-size: contain;}
+  .panel-button:active > .system-status-icon,
+  .panel-button:checked > .system-status-icon,
+  .panel-button:focus > .system-status-icon {
+      icon-shadow:white 0px 0px 0px;}
+
+  #panel.unlock-screen .panel-button,
+  #panel.lock-screen .panel-button,
+  #panel.login-screen .panel-button {
+      color: #e6e6e6;}
+  #panel.unlock-screen .panel-button:hover,
+  #panel.lock-screen .panel-button:hover,
+  #panel.login-screen .panel-button:hover,
+  #panel.unlock-screen .panel-button:active,
+  #panel.lock-screen .panel-button:active,
+  #panel.login-screen .panel-button:active,
+  #panel.unlock-screen .panel-button:focus,
+  #panel.lock-screen .panel-button:focus,
+  #panel.login-screen .panel-button:focus {
+      color: white;
+  }
+
+  .panel-menu {
+      -boxpointer-gap: 1px;}
+  .panel-status-indicators-box,
+  .panel-status-menu-box {
+      spacing: 2px;}
+
+  /* Replaces the activities text with a custom image. Height and width should use the same size as the image file. */
+  #panel:overview #panelActivities:active,
+  #panel:overview #panelActivities:overview {
+  	color:transparent
+  }
+
+  #panelActivities {
+  	border: none;
+  	background-image: url("./assets/distributor.svg");
+  	background-position: center 20 20;
+  	width: 48px;
+  	height: 28px;
+  	color: transparent;
+  font-weight:bold;
+  transition-duration:300ms;
+  }
+
+  #panelActivities:hover {
+  	/*background-image:  url("./assets/distributor-logo.svg");
+          background-gradient-direction:none;
+          background-color:transparent;*/
+  transition-duration:300ms;
+  	background-image: url("./assets/distributor.svg");
+          background-gradient-direction:none;
+          color: transparent;
+  }
+
+  #panel:overview #panelActivities:active,
+  #panel:overview #panelActivities:overview,
+  #panelActivities:active,
+  #panelActivities:overview {
+  	background-image:  url("./assets/distributor-over.svg");
+  	border: none;
+  	background-position: center 20 20;
+  	width: 48px;
+  	height: 28px;
+  	color: transparent;
+  font-weight:bold;
+  transition-duration:300ms;
+  }
 
 /********************
  * Calendar popover *
@@ -2496,4 +2627,4 @@ StScrollBar {
   border-radius: 2px;
   background: #2a373e;
   color: #ECEFF1;
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.54), 0 8px 8px rgba(0, 0, 0, 0.44), 0 4px 4px rgba(0, 0, 0, 0.32); }
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.54), 0 8px 8px rgba(0, 0, 0, 0.44), 0 4px 4px rgba(0, 0, 0, 0.32);  }
